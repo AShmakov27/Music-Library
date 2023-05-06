@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "71545040232",
+    "project_id": "music-1c976",
+    "storage_bucket": "music-1c976.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71545040232:android:77c51e3f6dcffcf0627add",
+        "android_client_info": {
+          "package_name": "com.kyrsovaya.musiclibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71545040232-7aoo7e3ikkgild9na1l4vtb4s5400nen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kyrsovaya.musiclibrary",
+            "certificate_hash": "e7762114ebddde403dbcb822913d15c42694e109"
+          }
+        },
+        {
+          "client_id": "71545040232-0g5ss07hqb87lbv901vt26vfgbcg6t6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATs_uMaLWS2cP51WUZqQx3AIfPJ1C1l9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71545040232-0g5ss07hqb87lbv901vt26vfgbcg6t6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

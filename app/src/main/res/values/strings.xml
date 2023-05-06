@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Music Library</string>
+    <string name="app_in_name">Music Library</string>
+    <string name="app_after">Authentication and Register</string>
+    <string name="text_bottom">Войдите в свою учетную запись</string>
+    <string name="btnSignIn">Войти</string>
+    <string name="btnRegister">Зарегистрироваться</string>
+    <string name="input_email">Введите Email</string>
+    <string name="input_pass">Введите пароль</string>
+    <string name="input_name">Введите имя</string>
+    <string name="input_phone">Введите номер телефона</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
