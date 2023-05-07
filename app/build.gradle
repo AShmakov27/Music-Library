@@ -46,9 +46,14 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.2.1'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    
     def navVersion = "2.5.3"
     implementation "androidx.navigation:navigation-fragment:$navVersion"
     implementation "androidx.navigation:navigation-ui:$navVersion"
+
+    def retrofitVersion = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
 }
 
 apply plugin: 'com.google.gms.google-services'
