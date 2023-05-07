@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,38 +14,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicLibrary"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
         <activity
             android:name=".AlbumDetailsActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Album details">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ArtistDetailsActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Artist details">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".AlbumSearchActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Search results">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".TrackSearchActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Search results">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ArtistSearchActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Search results">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
