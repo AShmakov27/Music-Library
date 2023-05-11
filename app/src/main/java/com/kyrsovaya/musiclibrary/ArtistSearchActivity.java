@@ -75,6 +75,5 @@ public class ArtistSearchActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

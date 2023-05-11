@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.kyrsovaya.musiclibrary.adapter.GeoTopArtistsAdapter;
 import com.kyrsovaya.musiclibrary.adapter.TopArtistsAdapter;
+import com.kyrsovaya.musiclibrary.data.ClickListener;
 import com.kyrsovaya.musiclibrary.models.ViewModel.MusicActivityViewModel;
 import com.kyrsovaya.musiclibrary.models.artist.Artist;
 import com.kyrsovaya.musiclibrary.models.artist.Artists;
@@ -79,6 +80,8 @@ public class MusicActivity extends AppCompatActivity{
         setUpAlbumButton();
         setUpArtistButton();
         setUpTrackButton();
+        clickItemFromTopList();
+        clickItemFromGeoList();
 
         viewModel = new ViewModelProvider(this).get(MusicActivityViewModel.class);
     }
@@ -192,6 +195,28 @@ public class MusicActivity extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(MusicActivity.this, TrackSearchActivity.class);
                 intent.putExtra(PUT_TRACK_NAME, trackName);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void clickItemFromTopList(){
+        topArtistsAdapter.setOnItemClickListener(new ClickListener() {
+            @Override
+            public void onItemClick(int position, View v) {
+                Intent intent = new Intent(MusicActivity.this, ArtistDetailsActivity.class);
+                intent.putExtra(PUT_ARTIST_NAME, topArtists.get(position).getName());
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void clickItemFromGeoList(){
+        geoTopArtistsAdapter.setOnItemClickListener(new ClickListener() {
+            @Override
+            public void onItemClick(int position, View v) {
+                Intent intent = new Intent(MusicActivity.this, ArtistDetailsActivity.class);
+                intent.putExtra(PUT_ARTIST_NAME, geoTopArtists.get(position).getName());
                 startActivity(intent);
             }
         });
